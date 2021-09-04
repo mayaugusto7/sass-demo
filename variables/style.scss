@@ -1,0 +1,23 @@
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#container {
+  width: $myWidth;
+}
+
+h1 {
+  $myColor: green !global; // variavel dentro do escopo de h1 !global torna a variabel local global
+  color: $myColor;
+}
+
+p {
+  color: $myColor; // variavel global
+}

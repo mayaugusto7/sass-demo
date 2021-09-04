@@ -1,0 +1,28 @@
+/* define primary colors */
+$primary_1: #a2b9bc;
+$primary_2: #b2ad7f;
+$primary_3: #878f99;
+
+/* define size */
+$width: 600px;
+$height: 300px;
+
+/* use the variables */
+.main-header {
+  background-color: $primary_1;
+  height: $height;
+  width: $width;
+}
+
+.menu-left {
+  background-color: $primary_2;
+  height: $height;
+  width: $width;
+
+}
+
+.menu-right {
+  background-color: $primary_3;
+  height: $height;
+  width: $width;
+}

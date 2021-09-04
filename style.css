@@ -1,0 +1,22 @@
+/* define primary colors */
+/* define size */
+/* use the variables */
+.main-header {
+  background-color: #a2b9bc;
+  height: 300px;
+  width: 600px;
+}
+
+.menu-left {
+  background-color: #b2ad7f;
+  height: 300px;
+  width: 600px;
+}
+
+.menu-right {
+  background-color: #878f99;
+  height: 300px;
+  width: 600px;
+}
+
+/*# sourceMappingURL=style.css.map */
