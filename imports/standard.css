@@ -1,0 +1,32 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+li a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+h3 {
+  color: #EE82EE;
+}
+
+h4 {
+  color: #4169E1;
+}
+
+h5 {
+  color: #8FBC8f;
+}
+
+/*# sourceMappingURL=standard.css.map */

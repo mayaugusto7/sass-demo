@@ -1,0 +1,27 @@
+@import "reset";
+@import "colors";
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+li {
+  a {
+    margin: 10px;
+    text-decoration: none;
+  }
+}
+
+h3 {
+  color: $myPink;
+}
+
+h4 {
+  color: $myBlue;
+}
+
+h5 {
+  color: $myGreen;
+}
