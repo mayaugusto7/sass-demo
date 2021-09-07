@@ -1,0 +1,44 @@
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+
+@mixin bordered($color: blue, $width: 1px) {
+  border: $width solid $color;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+  border: 1px solid blue;
+  width: 100px;
+  height: 100px;
+}
+
+.myArticle {
+  @include bordered(blue, 1px);
+}
+
+.myNotes {
+  @include bordered(red, 2px);
+}
+
+.myTips {
+  @include bordered($color: orange)
+}
+
+.myBox {
+  @include transform(rotate(20deg))
+}
+
+.danger {
+  @include important-text;
+  background-color: green;
+}
