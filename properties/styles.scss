@@ -1,0 +1,72 @@
+.circle {
+  $size: 100px;
+  width: $size;
+  height: $size;
+  border-radius: $size * 0.5;
+  background-color: #4169E1;
+}
+
+// interpolation
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: value;
+}
+
+.gray {
+  @include prefix(filter, grayscale(50%), moz webkit);
+  width: 100px;
+  height: 100px;
+  background-color: #4169E1;
+}
+
+// nesting declarations
+
+.enlarge {
+  font-size: 14px;
+  transition: {
+    property: font-size;
+    duration: 10s;
+    delay: 2s;
+  }
+
+  &:hover { font-size: 36px; }
+}
+
+.info-page {
+  margin: auto
+  {
+    bottom: 10px;
+    top: 2px;
+  }
+}
+
+// hidden declarations
+
+$rounded-corners: false;
+
+.button {
+  border: 1px solid black;
+  border-radius: if($rounded-corners, 5px, null);
+}
+
+// custom properties
+
+$primary: #81899b;
+$accent: #302e24;
+$warn: #dfa612;
+
+:root {
+  --primary: #{$primary};
+  --accent: #{$accent};
+  --warn: #{$warn};
+
+  --consumed-by-js: $primary;
+}
+
+.root {
+  background-color: var(--warn);
+  height: 100px;
+  width: 100px;
+}

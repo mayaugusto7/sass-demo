@@ -1,0 +1,50 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #4169E1;
+}
+
+.gray {
+  -moz-filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+  filter: value;
+  width: 100px;
+  height: 100px;
+  background-color: #4169E1;
+}
+
+.enlarge {
+  font-size: 14px;
+  transition-property: font-size;
+  transition-duration: 10s;
+  transition-delay: 2s;
+}
+.enlarge:hover {
+  font-size: 36px;
+}
+
+.info-page {
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}
+
+.button {
+  border: 1px solid black;
+}
+
+:root {
+  --primary: #81899b;
+  --accent: #302e24;
+  --warn: #dfa612;
+  --consumed-by-js: $primary;
+}
+
+.root {
+  background-color: var(--warn);
+  height: 100px;
+  width: 100px;
+}
+
+/*# sourceMappingURL=styles.css.map */

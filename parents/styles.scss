@@ -1,0 +1,16 @@
+// & usado para referenciar o elemento mais externo pai.
+
+.alert {
+  &:hover {
+    font-weight: bold;
+  }
+
+  [dir=rtl] & {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  :not(&) {
+    opacity: 0.7;
+  }
+}
